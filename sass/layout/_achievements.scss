@@ -1,0 +1,28 @@
+.achievements {
+    width: 100vw;
+
+    @include respond(tab-port) {
+        padding: 3rem;
+        padding-bottom: 0;
+    }
+
+    &__inner {
+        max-width: var(--grid-width);
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+
+        @include respond(phone) {
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

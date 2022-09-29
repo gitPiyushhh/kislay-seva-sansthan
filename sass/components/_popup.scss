@@ -1,0 +1,169 @@
+.popup {
+  width: 80%;
+  height: fit-content;
+  padding: 3rem;
+  background-color: var(--grey1);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1rem;
+  z-index: 9999999999;
+}
+.popup__wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.popup__close-btn {
+  align-self: flex-end;
+  width: 6.4rem;
+  height: 6.4rem;
+  background-color: var(--grey1);
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+.popup__times {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: var(--grey7);
+  transform: translate(-50%, -50%);
+}
+.popup__heading {
+  align-self: center;
+  color: var(--grey10);
+  text-align: center;
+}
+.popup__sub-heading {
+  align-self: center;
+  color: var(--grey10);
+  text-align: center;
+  margin-top: 3.2rem;
+}
+.popup__update {
+  margin-top: 3.2rem;
+  color: var(--grey10);
+}
+.popup__conditions {
+  margin-top: 2.4rem;
+  color: var(--grey8);
+}
+.popup__btn-box {
+  display: flex;
+  margin-top: 3.2rem;
+  align-self: center;
+}
+.popup__accept {
+  background-color: #51c12f;
+  margin-left: 2.4rem;
+  color: var(--grey1);
+  box-shadow: var(--drop-shadow);
+  padding: 2.5rem;
+}
+.popup__decline {
+  background-color: transparent;
+  border: 1px solid red;
+  color: red;
+  padding: 2.5rem;
+}
+.popup__close {
+  background-color: red;
+  border: none;
+  color: var(--grey1);
+}
+.popup--thankyou::after {
+  content: "Thank you!";
+  display: block;
+  position: absolute;
+  top: 110%;
+  right: 3rem;
+  z-index: 9999;
+  margin-top: -12rem;
+  font-family: "Abhaya Libre";
+  font-size: 8rem;
+  color: var(--color-blue-last);
+}
+.popup--importance {
+  opacity: 0;
+  animation: lazy-load-popup 2s 0.5s 1;
+  animation-delay: 3s !important;
+  animation-iteration-count: 1 !important;
+  animation-fill-mode: forwards;
+}
+.popup--importance::after {
+  content: "Its worth it!";
+  display: block;
+  position: absolute;
+  top: 110%;
+  right: 3rem;
+  z-index: 9999;
+  margin-top: -12rem;
+  font-family: "Abhaya Libre";
+  font-size: 8rem;
+  color: var(--color-blue-last);
+}
+@media (max-width: 37.5em) {
+  .popup--thankyou {
+    padding-top: 4rem;
+    padding-bottom: 12rem;
+  }
+  .popup--thankyou::after {
+    bottom: 0.7rem;
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 3.6rem !important;
+  }
+  .popup--importance {
+    padding-top: 4rem;
+    padding-bottom: 8rem;
+  }
+  .popup--importance::after {
+    font-size: 3.6rem !important;
+    bottom: 0rem;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  .popup__btn-box {
+    flex-direction: column;
+    width: 100%;
+  }
+  .popup__accept {
+    width: 100% !important;
+    margin-left: 0;
+    margin-top: 1.6rem;
+    text-align: center;
+  }
+  .popup__decline {
+    width: 100% !important;
+    text-align: center;
+  }
+  .popup__close {
+    width: 100% !important;
+    text-align: center;
+  }
+  .popup::after {
+    text-align: center;
+    font-size: 6rem;
+  }
+}
+
+// Overlay styles
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.349);
+}
+.overlay--importance {
+  opacity: 0;
+  animation: lazy-load-popup 2s 0.5s 1;
+  animation-delay: 3s !important;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}

@@ -1,0 +1,12 @@
+@keyframes shake {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-3rem); }
+    50% { transform: translateY(1rem); }
+    75% { transform: translateY(2rem); }
+    100% { transform: translateY(0); }
+  }
+
+  @keyframes shine {
+    0% {left: -200%;}
+    100% {left: 200%;}
+  }

@@ -1,0 +1,19 @@
+.achievements-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 32rem;
+
+    &__text {
+        color: var(--grey10);
+        margin-left: 2.4rem;
+    }
+
+    @include respond(phone) {
+        width: 100%;
+        flex-direction: row-reverse;
+        justify-content:space-between;
+        margin-bottom: 2.4rem;
+    }
+}

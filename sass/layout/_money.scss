@@ -1,0 +1,14 @@
+.money {
+    
+    &__card {
+        width: 100%;
+        text-align: center;
+        padding: 5rem;
+        border: 2px dashed var(--grey6);
+        margin-bottom: 3.2rem;
+    }
+}
+
+.special {
+    margin-bottom: 0 !important;
+}

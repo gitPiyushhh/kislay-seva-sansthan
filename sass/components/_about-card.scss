@@ -1,0 +1,102 @@
+.about-card {
+  background-color: var(--white);
+  padding: 2.4rem;
+  border-radius: 1rem;
+  
+  border-bottom: 0.9rem solid var(--color-secondary);
+  width: 56.6rem;
+  height: fit-content;
+
+  box-shadow: var(--drop-shadow);
+  position: relative;
+
+  transition: all .5s ease;
+
+  @include respond(phone) {
+    width: 100%;
+    margin-bottom: 2.4rem;
+}
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__icon-wrapper {
+    width: 5.6rem;
+    height: 5.6rem;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--color-secondary);
+  }
+
+  &__title {
+    margin-left: 1.6rem;
+  }
+
+  &__expand {
+    width: 3.6rem;
+    height: 3.6rem;
+    border-radius: 50%;
+    transition: all .5s ease;
+
+    cursor: pointer;
+
+    background-color: var(--grey1);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text {
+    color: var(--grey7);
+    margin-top: 2.4rem;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.horizontal {
+  content: "";
+  display: block;
+  height: 1.35px;
+  width: 16.5px;
+
+  position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+
+  border-radius: 1rem;
+  background-color: var(--grey9);
+}
+
+.vertical {
+  content: "";
+  display: block;
+  height: 1.35px;
+  width: 16.5px;
+
+  position: absolute;
+  transform: rotate(90deg);
+//   top: 50%;
+//   right: 50%;
+//   transform: rotate(90deg) translate(-50%, -50%);
+
+  border-radius: 1rem;
+  background-color: var(--grey9);
+}

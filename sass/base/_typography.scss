@@ -1,0 +1,196 @@
+.h1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 92px;
+  line-height: 106px;
+  /* identical to box height, or 115% */
+
+  letter-spacing: -0.015em;
+}
+
+.h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 72px;
+  /* identical to box height, or 112% */
+
+  letter-spacing: -0.005em;
+}
+
+.h3 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 56px;
+  /* identical to box height, or 117% */
+}
+
+.h4 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 32px;
+  /* identical to box height, or 89% */
+
+  letter-spacing: 0.0025em;
+}
+
+.h5 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  /* identical to box height, or 117% */
+}
+
+.h6 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 22px;
+  /* identical to box height, or 110% */
+
+  letter-spacing: 0.0015em;
+}
+
+.sub1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+
+  letter-spacing: 0.0015em;
+}
+
+.sub2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  /* identical to box height, or 112% */
+
+  letter-spacing: 0.001em;
+}
+
+.body1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+
+  letter-spacing: 0.005em;
+}
+
+.body2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height, or 114% */
+
+  letter-spacing: 0.0025em;
+}
+
+.button {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height, or 114% */
+
+  letter-spacing: 0.0125em;
+}
+
+.btn {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height, or 114% */
+}
+
+.caption {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height, or 117% */
+
+  letter-spacing: 0.004em;
+}
+
+.overline {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  /* identical to box height, or 120% */
+
+  letter-spacing: 0.015em;
+}
+
+.designer-text {
+  font-family: Abhaya Libre;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 32px;
+  /* identical to box height, or 89% */
+
+  letter-spacing: 0.0025em;
+}
+
+.designer-text-2 {
+  font-family: Abhaya Libre;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 56px;
+  /* identical to box height, or 117% */
+}
+
+.testimonial-text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 34px;
+}
+
+
+.section-heading {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  @include respond(phone) {
+    width: 70%;
+}
+}
+
+.logo {
+  font-family: "Helvetica Neue";
+  color: var(--black);
+}
+
+a {
+  text-decoration: none;
+  color: var(--grey1);
+}

@@ -1,0 +1,78 @@
+.invisible {
+    display: none;
+    visibility: hidden;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.visible {
+    display: block;
+    visibility: visible;
+}
+
+.mt3 {
+    margin-top: 3.2rem;
+}
+
+.mt10 {
+    margin-top: 10rem;
+}
+
+.mt20 {
+    margin-top: 9rem;
+}
+
+.mt8 {
+    margin-top: 8rem;
+}
+
+.mr2 {
+    margin-right: 2.4rem;
+}
+
+.ml1 {
+    margin-left: 1.2rem;
+}
+
+.u-color-green {
+    color: var(--color-primary) !important;
+}
+
+.u-color-red {
+    color: #C95252!important;
+}
+
+.u-section-padding {
+    padding: 10rem 0;
+}
+
+.u-flex {
+    display: flex;
+    align-items: center;
+}
+
+.u-section-padding {
+    padding: 10rem 0;
+}
+
+.u-margin-top-4 {
+    margin-top: 3.2rem;
+}
+
+.u-signature {
+    font-family: italic;
+    text-decoration: italic;
+}
+
+// Animation utilities
+.u-animate {
+    transition: all 0.3s ease;
+  }
+
+
+  .hiddenByZ {
+      z-index: 999 !important;
+  }

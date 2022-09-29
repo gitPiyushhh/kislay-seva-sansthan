@@ -1,0 +1,93 @@
+.pay {
+  width: 100vw;
+  padding-top: 9rem;
+
+  @include respond(tab-port) {
+    padding: 3rem;
+    padding-top: 9rem;
+    padding-bottom: 0;
+  }
+
+  &__inner {
+    max-width: var(--grid-width);
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__wrapper {
+    width: 100%;
+    margin-top: 5rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+  }
+
+  &__btn {
+    padding: 1.5rem 5rem;
+
+    @include respond(tab-port) {
+      margin-bottom: 2rem;
+      width: 100%;
+    }
+
+    &--special {
+      position: relative;
+      &:after {
+        content: "Most Popular";
+
+        padding: 0.7rem;
+        background-color: #f4b9b8;
+        border-radius: 0.2rem;
+
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        /* identical to box height, or 117% */
+
+        letter-spacing: 0.004em;
+
+        position: absolute;
+        top: -2rem;
+        right: 5px;
+
+        @include respond(tab-port) {
+          top: 3px;
+          right: 3px;
+        }
+      }
+    }
+  }
+
+  &__text {
+    color: var(--color-primary);
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  &__caution {
+
+    &-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 3rem 1.5rem;
+
+      border-radius: 1rem;
+      background-color: #FFB067;
+      opacity: 0.9;
+      margin-top: 4rem;
+    }
+    color: var(--grey10);
+    text-align: center;
+  }
+}

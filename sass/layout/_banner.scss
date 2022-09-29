@@ -1,0 +1,126 @@
+.banner {
+    width: 100vw;
+    margin-top: 10rem;
+    &__inner {
+        max-width: var(--grid-width);
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include respond(phone) {
+            flex-direction: column-reverse;
+            align-items: justify;
+        }
+    }
+
+    &__wrapper {
+        width: 53.8rem;
+
+        @include respond(phone) {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 7rem;
+        }
+    }
+
+    &__heading {
+        color: var(--grey10);
+    }
+
+    &__sub-heading {
+        color: var(--grey7);
+    }
+
+    &__cta-wrapper {
+        display: flex;
+        width:fit-content;
+
+        justify-content: space-between;
+        align-items: center;
+
+        margin-top: 4rem;
+
+        @include respond(phone) {
+            align-self: flex-start;
+        }
+    }
+
+    &__cta {
+        position: relative;
+    overflow: hidden;
+    transition: all 0.2s ease;
+    &::after {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: -200%;
+      width: 200%;
+      height: 100%;
+      transform: skewX(-20deg);
+      background-image: linear-gradient(
+        to right,
+        transparent,
+        rgba(#fff, 0.3),
+        transparent
+      );
+    }
+    &::after {
+      animation: shine 1.6s ease infinite;
+    }
+    &:active {
+      transform: translateY(1px);
+      box-shadow: 0 4px 16px rgba(#000, 0.2);
+    }
+    }
+
+    &__arrow {
+        width:6.8rem;
+        height:2.2rem;
+
+        margin-left: 3.2rem;
+
+        transition: all 0.3s;
+        cursor: pointer;
+
+        &:hover {
+            transform: scaleX(1.1);
+        }
+    }
+
+    &__video {
+        width: 4rem;
+        height: 4rem;
+
+        margin-left:3.2rem;
+
+        transition: all 0.3s;
+        cursor: pointer;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    &__img {
+        width: 50rem;
+        height: auto;
+        transition: all 1s;
+
+        border-radius: 10rem 0 6.4rem 0;
+
+        @include respond(phone) {
+            width: 99%;
+            border-radius: 2rem;
+            outline-offset: 0.5rem;
+            outline: 3px solid var(--color-primary);
+        }
+        
+    }
+
+    @include respond(tab-port) {
+        padding: 3rem;
+        padding-bottom: 0;
+    }
+}

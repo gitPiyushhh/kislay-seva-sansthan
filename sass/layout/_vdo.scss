@@ -1,0 +1,15 @@
+.vdo {
+  width: 100vw;
+  padding-top: 9rem;
+
+  @include respond(tab-port) {
+    padding: 3rem;
+    padding-top: 9rem;
+    padding-bottom: 0;
+  }
+  &__inner {
+    max-width: var(--grid-width);
+    margin: 0 auto;
+    border-radius: 2rem;
+  }
+}

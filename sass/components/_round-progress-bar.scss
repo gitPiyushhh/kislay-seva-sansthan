@@ -1,0 +1,42 @@
+.round-progress-bar {
+    height:10rem;
+    width:10rem;
+    border-radius: 50%;
+
+    background-color: var(--color-primary);
+    position: relative;
+
+    &::after {
+        content: "200+";
+        color: var(--grey1);
+        font-size: 3rem;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: medium;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+    &--1 {
+        &::after {
+            content: "200+" !important;
+        }
+    }
+
+    &--2 {
+        &::after {
+            content: "150+" !important;
+        }
+    }
+
+    &--3 {
+        &::after {
+            content: "5+" !important;
+        }
+    }
+
+    
+}
+

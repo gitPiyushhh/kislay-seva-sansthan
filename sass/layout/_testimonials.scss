@@ -1,0 +1,30 @@
+.testimonials {
+    width: 100vw;
+
+    @include respond(tab-port) {
+        padding: 3rem;
+    }
+
+
+    &__inner {
+        max-width: var(--grid-width);
+        height: fit-content;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__wrapper {
+        height: fit-content;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        position: relative;
+
+        @include respond(phone) {
+            width: 100%;
+            flex-direction: column;
+        }
+    }
+}

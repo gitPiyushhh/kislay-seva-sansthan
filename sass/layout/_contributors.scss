@@ -1,0 +1,58 @@
+.contributors {
+    width: 100vw;
+    height: fit-content;
+    padding: 10rem 0;
+
+    background-color: var(--grey1);
+
+    box-shadow: var(--inner-shadow);
+    
+    @include respond(phone) {
+        padding: 5rem 3rem;
+    }
+
+    &__inner {
+        height: 100%;
+        max-width: var(--grid-width);
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        @include respond(phone) {
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+
+    &__wrapper {
+        width: 100%;
+        display: flex;
+        margin-top: 8rem;
+        justify-content: space-between;
+        align-items: space-between;
+        text-align: center;
+
+        @include respond(tab-port) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__tag {
+        color: var(--grey7);
+        cursor: pointer;
+
+        transition: all 0.3s;
+
+        &:hover {
+            color: var(--color-primary);
+        }
+        @include respond(phone) {
+            margin-bottom: 2.4rem;
+        }
+    }
+}

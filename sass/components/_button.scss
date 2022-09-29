@@ -1,0 +1,30 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--color-primary);
+    border-radius: 1rem;
+    color: var(--grey1);
+    width: fit-content !important;
+
+    cursor: pointer;
+
+    transition: all 0.3s;
+
+    &:hover {
+        transform: scale(1.1);
+
+        @include respond (tab-port) {
+            transform: scale(1);
+        }
+    }
+
+    &--primary {
+        padding: 1.2rem 3.2rem;
+    }
+    
+    &--secondary {
+        padding: 1.6rem 3.2rem;
+    }
+}
